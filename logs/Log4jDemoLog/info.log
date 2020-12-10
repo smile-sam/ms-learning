@@ -1,0 +1,20 @@
+2020-12-10 14:13:14.015 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting RpcServerApp using Java 1.8.0_251 on DESKTOP-08AHIRJ with PID 15832 (D:\03SamProject\ms-learning\target\classes started by sam in D:\03SamProject\ms-learning)
+2020-12-10 14:13:14.023 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[664 line] - The following profiles are active: server
+2020-12-10 14:13:14.945 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-127.0.0.1-8080"]
+2020-12-10 14:13:14.946 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
+2020-12-10 14:13:14.946 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-10 14:13:15.032 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
+2020-12-10 14:13:15.509 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-127.0.0.1-8080"]
+2020-12-10 14:13:15.655 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61 line] - Started RpcServerApp in 2.022 seconds (JVM running for 2.895)
+2020-12-10 14:13:15.938 [INFO ] com.ms.learning.netty.springboot.server.NettyServer.start[42 line] - 服务器启动开始监听端口: 8082
+2020-12-10 14:13:29.410 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting ClientApplication using Java 1.8.0_251 on DESKTOP-08AHIRJ with PID 2184 (D:\03SamProject\ms-learning\target\classes started by sam in D:\03SamProject\ms-learning)
+2020-12-10 14:13:29.449 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[664 line] - The following profiles are active: server
+2020-12-10 14:13:32.306 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-127.0.0.1-8080"]
+2020-12-10 14:13:32.306 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
+2020-12-10 14:13:32.306 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-10 14:13:32.406 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
+2020-12-10 14:13:33.113 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-127.0.0.1-8080"]
+2020-12-10 14:13:33.128 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Pausing ProtocolHandler ["http-nio-127.0.0.1-8080"]
+2020-12-10 14:13:33.129 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Stopping service [Tomcat]
+2020-12-10 14:13:33.132 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Stopping ProtocolHandler ["http-nio-127.0.0.1-8080"]
+2020-12-10 14:13:33.133 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Destroying ProtocolHandler ["http-nio-127.0.0.1-8080"]
