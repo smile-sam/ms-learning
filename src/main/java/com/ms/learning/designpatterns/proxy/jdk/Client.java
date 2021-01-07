@@ -16,5 +16,10 @@ public class Client {
         Hi hi = (Hi)Proxy.newProxyInstance(RealSubject.class.getClassLoader(), new Class[]{Hi.class}, new RealSubject((new HiImpl())));
         hi.sayHi();
 
+
+        UserService userService = new UserServiceImpl();
+        UserService u = (UserService) new UserProxy(userService).getInstance();
+        u.addUser("sam");
+
     }
 }
