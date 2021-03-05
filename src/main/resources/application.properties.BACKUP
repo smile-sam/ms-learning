@@ -1,7 +1,9 @@
-
 # 启动server时启动server的配置文件
 # spring.profiles.active=server
-
 # 启动client时启动client的配置文件
-spring.profiles.active=client
+#spring.profiles.active=client
+logging.level.root=info
+server.tomcat.threads.max=1
+
+
 

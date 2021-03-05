@@ -1,8 +1,5 @@
 package com.ms.learning.designpatterns.proxy.jdk;
 
-import io.swagger.models.auth.In;
-import sun.security.jca.GetInstance;
-
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
