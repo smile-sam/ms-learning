@@ -1,6 +1,4 @@
-package com.ms.codegenerator.util;
-
-import org.apache.commons.lang3.StringUtils;
+package com.ms.learning.utils;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -220,13 +218,13 @@ public class NumberUtil {
 
     public static String splitNumberAndJoin(int num, String joinFor) {
         String temp = String.valueOf(num);
-        if (StringUtils.isNotBlank(temp)) {
+        if (org.apache.commons.lang3.StringUtils.isNotBlank(temp)) {
             String[] temps = temp.split("");
             if (null != temps && 0 < temps.length) {
                 StringBuffer buffer = new StringBuffer();
 
                 for(int i = 0; i < temps.length; ++i) {
-                    if (StringUtils.isNotBlank(temps[i])) {
+                    if (org.apache.commons.lang3.StringUtils.isNotBlank(temps[i])) {
                         buffer.append(temps[i].trim());
                         if (i < temps.length - 1) {
                             buffer.append(joinFor);

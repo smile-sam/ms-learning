@@ -1,4 +1,4 @@
-package com.ms.codegenerator.util;
+package com.ms.learning.utils;
 
 import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.annotation.IdType;
@@ -11,7 +11,6 @@ import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Optional;
 
 /**
@@ -28,6 +27,8 @@ public class CodeGenerator {
     private String dir;
     private String xmlDir;
     private String packageName;
+
+    private String author;
 
     private CodeGenerator() {
     }
@@ -73,7 +74,7 @@ public class CodeGenerator {
                 // to do nothing
             }
         };
-        List<FileOutConfig> focList = new ArrayList<>();
+        java.util.List<FileOutConfig> focList = new ArrayList<>();
 //        你也可以定制 xml 的模板
         focList.add(new FileOutConfig("/templates/mapper.xml.ftl") {
             @Override
@@ -141,6 +142,9 @@ public class CodeGenerator {
         codingMysql(true, false, true, this.dbUrl, this.userName, this.password, this.dir, this.xmlDir, this.packageName, tableNames);
     }
 
+    public void code2(String... tableNames) {
+        codingMysql(true, false, true, this.dbUrl, this.userName, this.password, this.dir, this.xmlDir, this.packageName, tableNames);
+    }
     /**
      * The type Config builder.
      */
@@ -152,6 +156,9 @@ public class CodeGenerator {
         private String dir;
         private String xmlDir;
         private String packageName;
+
+        private String author;
+
 
 
         /**
@@ -210,6 +217,16 @@ public class CodeGenerator {
         }
 
         /**
+         * author config builder.
+         *
+         * @param author the author name
+         * @return the config builder
+         */
+        public ConfigBuilder author(final String author) {
+            this.author = author;
+            return this;
+        }
+        /**
          * Package name config builder.
          *
          * @param packageName the package name
@@ -227,7 +244,6 @@ public class CodeGenerator {
          */
         public CodeGenerator build() {
             CodeGenerator generator = new CodeGenerator();
-
             generator.dbUrl = Optional.of(this.dbUrl).get();
             generator.userName = Optional.of(this.userName).get();
             generator.password = Optional.of(this.password).get();
